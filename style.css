@@ -87,8 +87,33 @@
 .ex-10-icon {
     font-size: 60px;
 }
+.ex-10-icon:hover{
+    animation: turn 1s infinite;
+}
+@keyframes turn {
+    0% { 
+         transform: rotate(1turn);
+    }
+}
 .ex-11-icon {
     font-size: 60px;
+}
+.ex-11-icon:hover{
+    animation: turn 2s linear;
+}
+@keyframes turn {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    50%{
+        trasform: rotate (270deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
 }
 .ex-12-button, .ex-13-button {
     position: relative;
